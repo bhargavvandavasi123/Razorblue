@@ -19,7 +19,6 @@ function importing() {
           final.push(result[(i, i)]);
         }
       }
-      // console.log(final);
 
       for (var i = 0; i < final.length; i++) {
         if (final[i][4] == "Petrol") {
@@ -33,33 +32,10 @@ function importing() {
         }
       }
 
-      //   const fuelTypes = (filename, fueltype) => {
-      //     let filename = filename;
-      //     let text = fueltype.map((res) => res.join(","));
-      //     let blob = new Blob([text], { type: "text/plain" });
-      //     let link = document.createElement("a");
-      //     link.download = filename;
-      //     link.href = window.URL.createObjectURL(blob);
-      //     document.body.appendChild(link);
-      //     link.click();
-      //     setTimeout(() => {
-      //       document.body.removeChild(link);
-      //       window.URL.revokeObjectURL(link.href);
-      //     }, 100);
-      //   };
-
       fuelTypes("petrolCars.csv", petrolCars);
       fuelTypes("dieselCars.csv", DieselCars);
       fuelTypes("electricCars.csv", ElectricCars);
       fuelTypes("HybridCars.csv", HybridCars);
-
-      //   let text = petrolCars.map((res) => res.join(","));
-      //   let blob = new Blob([text], { type: "text/plain" });
-      //   let link = document.createElement("a");
-      //   link.download = "petrol.csv";
-      //   link.href = window.URL.createObjectURL(blob);
-      //   document.body.appendChild(link);
-      //   link.click();
 
       let validRegistrations = [];
       let inValidRegistrations = 0;
@@ -71,11 +47,6 @@ function importing() {
         } else {
           inValidRegistrations += 1;
         }
-
-        //console.log(validRegistrations);
-        // let regexp = /\n[a-zA-Z]{2}[0-9][0-9] [a-zA-Z]{3}+/;
-        // let result = entry[0].match(regexp);
-        //console.log(result);
       });
       console.log(validRegistrations);
       fuelTypes("validRegistrations.csv", validRegistrations);

@@ -1,20 +1,3 @@
-// fetch("http://localhost:3000/ipv4")
-//   .then((res) => res.json())
-//   .then((data) => {
-//     // if(given == data[0].ipv4.single){
-//     //     console.log(ipv4 exists);
-//     // }
-//     // console.log(
-//     //   ipv4Number(data[0].ipv4.range.split("-")[0]) <= ipv4Number(given) &&
-//     //     ipv4Number(given) <= ipv4Number(data[0].ipv4.range.split("-")[1])
-//     // );
-//     // const cidr = parseCIDR(data[0].ipv4.cidr);
-//     // console.log(
-//     //   ipv4Number(cidr[0]) <= ipv4Number(given) &&
-//     //     ipv4Number(given) <= ipv4Number(cidr[1])
-//     // );
-//   });
-
 function ipv4() {
   var ipv4 = document.getElementById("ipv4").value;
 
@@ -52,16 +35,12 @@ var parseCIDR = function (CIDR) {
   var buf = new ArrayBuffer(4); //4 octets
   var i32 = new Uint32Array(buf);
 
-  //Get the UInt32, and add the bit difference
   i32[0] = (sub[0] << 24) + (sub[1] << 16) + (sub[2] << 8) + sub[3] + off;
 
-  //Recombine into an IPv4 string:
   var end = Array.apply([], new Uint8Array(buf)).reverse().join(".");
 
   return [beg, end];
 };
-
-//console.log(parseCIDR("192.168.1.0/24"));
 
 const ipv4Number = (ip) => {
   iparray = ip.split(".");
