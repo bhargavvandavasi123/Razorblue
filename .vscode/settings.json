@@ -1,0 +1,4 @@
+{
+  "liveServer.settings.port": 5501,
+  "appService.zipIgnorePattern": ["node_modules{,/**}", ".vscode{,/**}"]
+}

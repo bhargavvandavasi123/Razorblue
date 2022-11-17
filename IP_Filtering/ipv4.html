@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100&display=swap"
+      rel="stylesheet"
+    />
+    <script src="anagram.html" defer></script>
+  </head>
+  <body>
+    <div class="hero">
+      <nav>
+        <h2 class="logo">Razor Blue</h2>
+        <ul>
+          <li><a href="../Anagram/anagram.html">Anagram</a></li>
+          <li><a href="./ipv4.html" style="color: blue">IP Filtering</a></li>
+          <li><a href="../Data_Importing/import.html">Data Importing</a></li>
+          <li><a href="../FIZZBUZZ/fizzbuzz.html">fizzbuzz</a></li>
+        </ul>
+        <button type="button">Subscribe</button>
+      </nav>
+      <br /><br /><br /><br />
+
+      <h1 class="label">IP Filtering</h1>
+      <div class="form">
+        <label> Please Enter any IPV4 Address :</label>
+        <input type="text" id="ipv4" name="ipv4" class="input" />
+        <button onclick="ipv4()">SUBMIT</button>
+      </div>
+      <div id="output" class="output"></div>
+    </div>
+    <script src="ipv4.js" />
+  </body>
+</html>

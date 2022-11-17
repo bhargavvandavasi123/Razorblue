@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100&display=swap"
+      rel="stylesheet"
+    />
+    <script src="anagram.html" defer></script>
+  </head>
+  <body>
+    <div class="hero">
+      <nav>
+        <h2 class="logo">Razor Blue</h2>
+        <ul>
+          <li><a href="./anagram.html" style="color: blue">Anagram</a></li>
+          <li><a href="../IP_Filtering/ipv4.html">IP Filtering</a></li>
+          <li><a href="../Data_Importing/import.html">Data Importing</a></li>
+          <li><a href="../FIZZBUZZ/fizzbuzz.html">fizzbuzz</a></li>
+        </ul>
+        <button type="button">Subscribe</button>
+      </nav>
+      <br /><br /><br /><br />
+
+      <h1 class="label">ANAGRAM</h1>
+      <div class="form">
+        <label> Enter first string :</label>
+        <input type="text" id="firstString" name="fString" class="input" />
+        <label>Enter Second String :</label>
+        <input type="text" id="secondString" name="sString" class="input" />
+        <button onclick="anagram()">SUBMIT</button>
+      </div>
+      <div id="output" class="output"></div>
+    </div>
+    <script require('./anagram.js')></script>
+   
+  </body>
+</html>

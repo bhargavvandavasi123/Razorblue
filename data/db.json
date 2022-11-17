@@ -1,0 +1,58 @@
+{
+  "quotes": [
+    {
+      "_id": "DHSz9oNRv15E",
+      "content": "Life is what happens to you while you're busy making other plans.",
+      "author": "John Lennon",
+      "tags": [
+        "famous-quotes"
+      ],
+      "authorSlug": "john-lennon",
+      "length": 65,
+      "dateAdded": "2020-12-17",
+      "dateModified": "2020-12-17"
+    },
+    {
+      "_id": "qnHNh4SbqhSR",
+      "content": "To be fully alive, fully human, and completely awake is to be continually thrown out of the nest.",
+      "author": "Pema Chödrön",
+      "tags": [
+        "famous-quotes"
+      ],
+      "authorSlug": "pema-chodron",
+      "length": 97,
+      "dateAdded": "2020-01-27",
+      "dateModified": "2020-01-27"
+    },
+    {
+      "_id": "FO7XX9krDFzO",
+      "content": "Every artist dips his brush in his own soul, and paints his own nature into his pictures.",
+      "author": "Henry Ward Beecher",
+      "tags": [
+        "famous-quotes"
+      ],
+      "authorSlug": "henry-ward-beecher",
+      "length": 89,
+      "dateAdded": "2021-01-10",
+      "dateModified": "2021-01-10"
+    },
+    {
+      "_id": "apQ8nGGjT14_",
+      "content": "Love is composed of a single soul inhabiting two bodies.",
+      "author": "Aristotle",
+      "tags": [
+        "famous-quotes"
+      ],
+      "authorSlug": "aristotle",
+      "length": 56,
+      "dateAdded": "2019-12-23",
+      "dateModified": "2019-12-23"
+    },
+    {
+      "id": "id",
+      "hi": "hi",
+      "dd": "dateTime",
+      "body": "postBody"
+    }
+  ]
+}
